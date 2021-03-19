@@ -1,0 +1,183 @@
+* {
+	margin: 0%;
+	padding: 0%;
+	box-sizing: border-box;
+}
+
+body {
+	overflow-x: hidden;
+	background: rgb(7, 8, 31);
+}
+
+.wrapper {
+	display: block;
+}
+.container {
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	background: rgb(7, 8, 31);
+}
+
+form,
+.info {
+	width: 50%;
+	color: white;
+	font-family: "Source Sans Pro", sans-serif;
+}
+.linkedin a {
+	text-decoration: none;
+	color: white;
+}
+
+form > div {
+	margin-top: 30px;
+}
+input[type="text"],
+textarea {
+	position: relative;
+	height: 50px;
+	width: 40vw;
+	font-size: 1.5em;
+	font-family: "Source Sans Pro", sans-serif;
+	background-color: #0d152b;
+	border: 1px solid #0d152b;
+	outline: none;
+	color: #fdfdfd;
+}
+
+textarea {
+	height: 15vh;
+}
+
+.field label {
+	display: block;
+	font-size: 1.5em;
+	font-family: "Source Sans Pro", sans-serif;
+}
+.field {
+	transform: translate(10%);
+}
+
+.actions {
+	display: flex;
+
+	flex-direction: column;
+	align-items: center;
+}
+.actions :nth-child(1) {
+	font-size: 1em;
+	height: 40px;
+	width: 150px;
+	margin-top: 10px;
+	color: #0d152b;
+	font-family: "Source Sans Pro", sans-serif;
+	background-color: #fdfdfd;
+	border: 1px solid #fdfdfd;
+	cursor: pointer;
+}
+
+.actions :nth-child(2) {
+	font-size: 1em;
+	height: 40px;
+	width: 150px;
+	margin-top: 10px;
+	color: #ffffff;
+	font-family: "Source Sans Pro", sans-serif;
+	background-color: #fdfdfd00;
+	border: 3px solid #fdfdfd;
+	padding: 0px 10px 0px 10px;
+	cursor: pointer;
+}
+
+.info-box {
+	display: grid;
+	grid-auto-rows: 1fr 1fr 1fr 2fr;
+	justify-content: center;
+}
+
+.info-box .ico {
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0);
+	height: 35px;
+	width: 35px;
+	border-radius: 30%;
+	z-index: 1;
+}
+.info-box .ico i {
+	font-size: 35px;
+	color: rgb(255, 0, 128);
+}
+
+.info-box > div {
+	border: 1px solid rgba(9, 12, 46, 0.651);
+	border-width: 1px 0px 0px 0px;
+	width: 100%;
+	background: #242943e6;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 20px 0px 20px 0px;
+}
+
+.info-box > div > h1 {
+	display: flex;
+	font-size: 50px;
+	margin-left: 40px;
+}
+
+.info-box > div > p {
+	margin-left: 80px;
+	font-size: 20px;
+}
+.footer {
+	display: flex;
+	background: #000000;
+}
+
+.footer > div {
+	background: #101629;
+	height: 100px;
+	width: 100px;
+	color: wheat;
+	display: flex;
+}
+
+@media only screen and (max-width: 500px) {
+	.container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	form,
+	.info {
+		border: 1px solid rgba(255, 255, 255, 0.158);
+		width: 100%;
+	}
+
+	.half {
+		display: block;
+	}
+
+	input[type="text"],
+	textarea {
+		height: 40px;
+		width: 80vw;
+		outline: none;
+	}
+	textarea {
+		height: 10vh;
+	}
+
+	form > div {
+		margin-top: 5px;
+	}
+
+	form .actions:nth-child(2) {
+		margin-bottom: 20px;
+	}
+	.footer {
+		display: flex;
+		flex-direction: column;
+	}
+}
