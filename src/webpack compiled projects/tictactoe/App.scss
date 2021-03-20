@@ -1,0 +1,124 @@
+body{
+    background-image: url("background.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.startBTN {
+    font-size: 40px;
+    font-family: "Gill Sans MT";
+    width: 120;
+    height: 70;
+    color: rgb(255, 255, 255);
+    border-radius: 6px;
+    border: 0px;
+    background-color: crimson;
+    box-shadow: -1.5px 8px 0.8px rgb(170, 9, 9);
+}
+
+.startBTN:active {
+    box-shadow: -2px 3px rgb(128, 40, 40);
+    transform: translatey(8px);
+}
+
+.container {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 5px;
+    width: 380px;
+    height: 380px;
+    background-image: url("structure.png");
+    background-size: contain;
+    text-align: center;
+    background-repeat: no-repeat;
+}
+
+.divs {
+    cursor: pointer;
+    font-size: 00px;
+    height: 120px;
+    width: 120px;
+    border-top-color: tomato;
+    border-bottom-color: tomato;
+    font-family: "Berlin sans FB";
+}
+
+
+.Back {
+    display: flex;
+    position: fixed;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+}
+
+.inner {
+    background-color: rgb(230, 54, 0);
+    height: 200px;
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.img {
+    background-image: url('win.png');
+    background-position: center;
+    background-size: contain;
+    position: relative;
+    height: 60px;
+    width: 60px;
+}
+
+.innerdiv {
+    color:rgb(0, 255, 255);
+    height: 60px;
+    background-color: rgb(235, 142, 66);
+    width: 380px;
+    font-family: tw cen mt;
+    font-size: 60px;
+    text-align: center;
+}
+
+.RestartBTN {
+    background-color: rgb(255, 255, 255);
+    border-radius: 7px;
+    font-size: 30px;
+    color: rgb(36, 13, 13);
+    font-family: tw cen mt;
+    cursor: pointer;
+    margin-top: 3%;
+}
+
+.RestartBTN:hover {
+    background-color: rgb(0, 255, 179);
+    color: rgb(47, 47, 47);
+}
+
+.CloseBTN {
+    margin-top: -15%;
+    align-self: flex-end;
+    color: rgb(255, 255, 255);
+    font-family: sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    width: 220x;
+    background-color:  rgb(230, 54, 0);
+    cursor: pointer;
+}
+
+.CloseBTN:hover {
+    color: rgb(122, 65, 155);
+}
+

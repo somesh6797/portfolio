@@ -12,13 +12,22 @@ $("nav").find("a").on('click', function (e){
     },1);    
 })
 
+
+const allAnchors=Array.from(document.querySelector(".nav"));
+// allAnchors.map(li => {
+//     li.childNodes.addEventListener('click', (e) => {
+//         console.log(e.target)
+        
+//     })
+// })
+console.log(allAnchors);
+
 const hamContainer = document.querySelector(".ham-container");
 const ham = document.querySelector(".ham")
-const ul=document.querySelector(".nav").firstChild
+const ul=document.querySelector(".nav").firstElementChild
 let open=false
 
 hamContainer.addEventListener('click', function (e) {
-    console.log("object")
     if (!open) {
         ham.classList.add("open")
         //now open the nav
@@ -33,16 +42,6 @@ hamContainer.addEventListener('click', function (e) {
     
 })
 
-
-// const allAnchors=Array.from(document.querySelector(".nav").firstChild.childNodes)
-// allAnchors.map(li => {
-//     li.firstChild.addEventListener('click', (e) => {
-//         // e.preventDefault()
-//         // e.stopPropagation();
-//         console.log(e.target)
-        
-//     })
-// })
 
 
 

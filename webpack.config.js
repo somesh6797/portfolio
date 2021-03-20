@@ -1,15 +1,23 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin")
 const MiniCssExtractPlugin=require("mini-css-extract-plugin")
+const path = require('path')
 
 module.exports={
+    // mode:'development',
     entry: {
         index: './src/index.js',
-        loginpages:'./src/pages/loginpages.js'
+        // App:'./src/projects/stopwatch/App.js'
       },
       output: {
-        filename: '[name].[hash:20].js',
-        path:__dirname+'/dist',
+        filename: '[name].js',
+        path:path.resolve(__dirname)+"/dist"
+        // path:path.resolve(__dirname)+"/dist/projects/stopwatch/",
     },
+
+    devServer: {
+        contentBase: __dirname + '/dist'
+      },
+    
     module: {
         rules: [
             {
@@ -41,10 +49,10 @@ module.exports={
             template: "./src/index.html",
             filename:"./index.html"
         }),
-        new HtmlWebPackPlugin({
-            template: "./src/pages/loginpages.html",
-            filename:"./loginpages.html"
-        }),
+        // new HtmlWebPackPlugin({
+        //     template: "./src/projects/stopwatch/App.html",
+        //     filename:"./App.html"
+        // }),
         new MiniCssExtractPlugin({
             filename: "[name].css",
             chunkFilename:"[id].css"
@@ -53,4 +61,5 @@ module.exports={
     externals: {            
             jquery: 'jQuery',            
     },
+    
 }

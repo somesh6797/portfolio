@@ -107,11 +107,10 @@ body{
 
 
 .main{
-    height: 100vh;
     display: flex;
     flex-direction: column;
-    // justify-content: center;
     align-items:center;
+    padding: 50px;
 }
 
 .hello_img{
@@ -275,10 +274,17 @@ cursor: pointer;
     justify-content: center;
     align-items: center;
     position: relative;
+    color: transparent;
+    .card:hover ,.img{
+        background-color: black;
+    }
 }
 
 
 .img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 90%;
     width: 70%;
     background-position: center;
@@ -290,23 +296,40 @@ cursor: pointer;
 
 
 .project1 .img{
-    background-image: url('./imageSlider/1.jpg');
+    background-image: url('./imageSlider/stopwatch-thumb.png');
 }
 
 .project2 .img{
-    background-image: url('./imageSlider/2.jpg');
+    background-image: url('./imageSlider/3.jpg');
     
 }
 
 .project3 .img{
-    background-image: url('./imageSlider/3.jpg');
+    background-image: url('./imageSlider/tictactoe-thumb.png');
 }
 
 .project4 .img{
     background-image: url('./imageSlider/4.jpg');
-
 }
 
+.img a{
+    font-size: 20px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    color: transparent;
+}
+
+.img a:hover{
+    // background-image: none;
+    background-color: rgba(0, 0, 0, 0.575);
+    transition: all .5s;
+    color: white;
+}
 
 .skills-list{
     height: 100%;
@@ -349,9 +372,9 @@ cursor: pointer;
     font-weight: 500;
     width: 70%;
     height:50px;
-    text-align: start;
-    
+    text-align: start;   
 }
+
 
 .skill{
     width: 100%;
@@ -507,6 +530,7 @@ justify-content: space-around;
     .who_am_i{
         font-size: 22px;
         width:100vw;
+        padding: 0px 20px 0px 20px;
     }
 
     .section{
@@ -533,6 +557,8 @@ justify-content: space-around;
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
+        // background-color: #050504;
+        padding-left:20px ;
     }
 
     .content-name , .contact-me .section-title-box>div>.content-name {
@@ -549,13 +575,16 @@ justify-content: space-around;
     }
     .content-num{
         margin:0;
+        padding: 20px 0px 10px 0px;
         font-size: 55px;
+        margin-left: -10px;
     }
 
 
     .about-me .section-content-box{
         font-size: 16px;
-        padding: 15px;
+        padding: 25px;
+        text-align: start; 
     }
 
 //Ham Transoformation
@@ -619,7 +648,7 @@ justify-content: space-around;
         width: 30px;
 	}
 	.ham::before {
-		transform: rotate(0deg);
+		transform: rotate(0deg)50px 50px;
 		transform: translateY(-10px);
         transition: all 0.5s;
         width:50%;
